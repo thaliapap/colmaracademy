@@ -299,22 +299,12 @@ footer a{
   }
 
 
-}
+
+
 
 /* Media Queries */
 
-@media only screen and (max-width: 895px) {
-
-  .information-section .content-information {
-    display:none;
+@media only screen and (max-width: 550px) {
+  header .desktop-header {
+    display: none;
   }
-
-  .info-box .desktop{
-    display:none;
-  }
-
-  .info-box .mobile{
-    display:block;
-    width:100%;
-  }
-}

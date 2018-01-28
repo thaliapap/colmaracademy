@@ -1,1 +1,320 @@
 /* Universal styles */
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/oMMgfZMQthOryQo9n22dcuvvDin1pK8aKteLpeZ5c0A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Roboto";
+  font-size: 16px;
+  text-align:left;
+  margin:0 auto;
+  background-color: white;
+  min-height:100vh;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+ li{
+   list-style: none;
+ }
+
+/*Main Nav Header*/
+
+header {
+  margin:0;
+  padding:1rem 1.5rem;
+  display:block;
+}
+
+header .desktop-header {
+  display:flex;
+  align-items:center;
+}
+
+header .logo{
+  display:flex;
+  flex-grow: 1;
+  align-items:center;
+}
+
+header .logo img {
+  margin-right: .5rem;
+}
+
+header li {
+  display:inline;
+  padding-right: 1rem;
+}
+
+
+.mobile-header {
+  display:none;
+}
+
+/* Main Section*/
+.main-section {
+  display: flex;
+  padding:0 1.5rem;
+  background-color: rgb(219, 219, 219);
+}
+
+.main-section .main-content{
+  width: 60%;
+  padding: 2rem 1.5rem 2rem 0;
+}
+
+.main-content img{
+  width:100%;
+}
+
+
+.main-section .text-content{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  width:40%;
+  padding: 2rem 0;
+}
+
+.text-content h1 {
+padding-bottom: 2rem;
+margin:0;
+}
+
+.text-content p {
+  margin:0;
+  padding-bottom: 1.5rem;
+}
+
+.button {
+  font-size: 1rem;
+  width:100%;
+  background-color: #799995;
+  padding: .5rem;
+  justify-content:center;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.button a{
+  color: white;
+}
+
+/*Information section*/
+
+.information-section {
+  display:flex;
+  padding:0 1.5rem;
+}
+
+.information-section .content-information {
+  display:block;
+  width: 60%;
+  padding: 2rem 1.5rem 2rem 0;
+  border-right: 1px solid rgb(245, 245, 245);
+}
+
+.content-information .information-main {
+  width:100%;
+}
+
+.content-information h2 {
+  margin: 2rem 0 1.5rem 0;
+}
+.content-information p {
+  margin:0;
+}
+
+/* Aside Panel */
+
+.information-section .information-panel {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  width:40%;
+  padding: 2rem 0;
+}
+.info-box:first-child{
+  padding-top:0;
+}
+
+.info-box {
+   display:flex;
+   padding:1rem 0 1rem 1rem;
+   border-bottom: 1px solid rgb(245, 245, 245);
+}
+.info-box:last-child{
+  padding-bottom: 0;
+  border-bottom:0;
+}
+
+ .info-box img{
+  width:35%;
+  height:100%;
+}
+
+.info-box .text-info {
+  display:flex;
+  flex-direction: column;
+  width:65%;
+  justify-content: center;
+  text-align:left;
+  padding: 0 1rem 0 1rem;
+}
+
+.text-info h3{
+  margin: 0;
+  padding-bottom: .5rem;
+  font-weight: bold;
+}
+
+.text-info p{
+  margin: 0;
+  padding-bottom: 8px;
+}
+
+.text-info a{
+  font-weight: bold;
+}
+
+.info-box .mobile{
+  display:none;
+}
+
+/* Course Info Section */
+
+.learning-section {
+  padding:2rem 3.5rem;
+  background-color: rgb(245, 245, 245);
+}
+
+.learning-section h1{
+  text-align: center;
+  margin:0;
+  padding: 0 0 1rem;
+}
+
+.courses-row {
+  display:flex;
+}
+
+.course {
+  flex-basis:33%;
+  margin: 1rem;
+  background-color: white;
+}
+
+.course img {
+  width: 100%;
+}
+
+
+.course .course-text {
+  display:block;
+  padding: 1rem 1rem;
+  text-align:left;
+}
+
+.course-text h3, h4, p {
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+
+/* Thesis exhibit section */
+
+.thesis-section {
+  padding: 2rem 0;
+}
+
+.thesis-section h1{
+    text-align: center;
+    padding-bottom: 2rem;
+    margin:0;
+  }
+
+  .thesis-section .thesis-container{
+    display:flex;
+    padding:0 1.5rem;
+  }
+
+  .thesis-article {
+    width: 60%;
+    padding: 0 1.5rem 0 0;
+    border-right: 1px solid rgb(245, 245, 245);
+  }
+
+  .thesis-article .thesis-video {
+    width:100%;
+    height:auto;
+  }
+
+  .thesis-article h3 {
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+
+  }
+  .thesis-article p {
+    margin:0;
+  }
+
+.thesis-container .information-panel{
+display:flex;
+flex-direction:column;
+width:40%;
+}
+
+
+
+/* Footer Section */
+  footer {
+    display: flex;
+    padding:1rem 1.5rem ;
+    border-top: 1px solid rgb(245, 245, 245);
+    font-size: .75rem;
+  }
+
+  footer .copyright{
+    flex-grow: 1;
+
+  }
+
+footer a{
+    color:black;
+    margin-right: 1rem;
+  }
+
+  footer a:last-child{
+    margin-right: 0;
+  }
+
+
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 895px) {
+
+  .information-section .content-information {
+    display:none;
+  }
+
+  .info-box .desktop{
+    display:none;
+  }
+
+  .info-box .mobile{
+    display:block;
+    width:100%;
+  }
+}

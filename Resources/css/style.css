@@ -1,12 +1,6 @@
 /* Universal styles */
 
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/oMMgfZMQthOryQo9n22dcuvvDin1pK8aKteLpeZ5c0A.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
-}
+
 
 *{
   box-sizing: border-box;
@@ -15,12 +9,24 @@
 html,
 body {
   font-family: "Roboto";
-  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
   text-align:left;
   margin:0 auto;
-  background-color: white;
+  background-color: rgb(242, 242, 242);
   min-height:100vh;
 }
+
+h1{
+  font-family: 'Roboto Slab', serif;
+  font-size: 2.75rem;
+  color:rgb(242, 242, 242)
+}
+
+p {
+  font-family:'Lato', sans-serif;
+}
+
 a{
   text-decoration: none;
   color: black;
@@ -35,6 +41,7 @@ header {
   margin:0;
   padding:1rem 1.5rem;
   display:block;
+  background-color: #7FADBF;
 }
 
 header .desktop-header {
@@ -48,6 +55,10 @@ header .logo{
   align-items:center;
 }
 
+header span {
+  font-size: 1.25rem;
+}
+
 header .logo img {
   margin-right: .5rem;
 }
@@ -55,6 +66,10 @@ header .logo img {
 header li {
   display:inline;
   padding-right: 1rem;
+}
+
+header a:hover{
+  font-weight:500;
 }
 
 
@@ -66,7 +81,7 @@ header li {
 .main-section {
   display: flex;
   padding:0 1.5rem;
-  background-color: rgb(219, 219, 219);
+  background-color: #898C7E;
 }
 
 .main-section .main-content{
@@ -90,7 +105,9 @@ header li {
 
 .text-content h1 {
 padding-bottom: 2rem;
+color:rgb(242, 242, 242);
 margin:0;
+line-height: 1;
 }
 
 .text-content p {
@@ -100,17 +117,19 @@ margin:0;
 
 .button {
   font-size: 1rem;
-  width:100%;
-  background-color: #799995;
+  width:30%;
+  background-color: #F2F2F2;
   padding: .5rem;
   justify-content:center;
   margin-bottom: 0;
   text-align: center;
+  border-radius: .25rem;
 }
 
-.button a{
-  color: white;
+.button:hover {
+  background-color:#BFB619;
 }
+
 
 /*Information section*/
 
@@ -123,7 +142,7 @@ margin:0;
   display:block;
   width: 60%;
   padding: 2rem 1.5rem 2rem 0;
-  border-right: 1px solid rgb(245, 245, 245);
+  border-right: 1px solid rgba(137, 140, 126, 0.3);
 }
 
 .content-information .information-main {
@@ -131,7 +150,8 @@ margin:0;
 }
 
 .content-information h2 {
-  margin: 2rem 0 1.5rem 0;
+  margin: 1.5rem 0 1rem 0;
+  font-size: 2rem;
 }
 .content-information p {
   margin:0;
@@ -153,7 +173,7 @@ margin:0;
 .info-box {
    display:flex;
    padding:1rem 0 1rem 1rem;
-   border-bottom: 1px solid rgb(245, 245, 245);
+   border-bottom: 1px solid rgba(137, 140, 126, 0.3);
 }
 .info-box:last-child{
   padding-bottom: 0;
@@ -176,17 +196,24 @@ margin:0;
 
 .text-info h3{
   margin: 0;
-  padding-bottom: .5rem;
+  line-height: 1.75rem;
   font-weight: bold;
+  font-size: 1.35rem;
+  padding-bottom:.75rem;
+  color: #898C7E;
 }
 
 .text-info p{
   margin: 0;
-  padding-bottom: 8px;
+  padding-bottom: .5rem;
 }
 
 .text-info a{
   font-weight: bold;
+}
+
+.text-info a:hover{
+  color:#BFB619;
 }
 
 .info-box .mobile{
@@ -197,7 +224,7 @@ margin:0;
 
 .learning-section {
   padding:2rem 3.5rem;
-  background-color: rgb(245, 245, 245);
+  background-color: #898C7E;
 }
 
 .learning-section h1{
@@ -213,9 +240,13 @@ margin:0;
 .course {
   flex-basis:33%;
   margin: 1rem;
-  background-color: white;
+  border-radius: .25rem;
+  background-color: rgb(242, 242, 242);
 }
 
+.course:hover{
+  background-color:#7FADBF;
+}
 .course img {
   width: 100%;
 }
@@ -225,6 +256,8 @@ margin:0;
   display:block;
   padding: 1rem 1rem;
   text-align:left;
+  line-height: 1.5;
+
 }
 
 .course-text h3, h4, p {
@@ -241,6 +274,7 @@ margin:0;
 .thesis-section h1{
     text-align: center;
     padding-bottom: 2rem;
+    color:#898C7E;
     margin:0;
   }
 
@@ -252,7 +286,7 @@ margin:0;
   .thesis-article {
     width: 60%;
     padding: 0 1.5rem 0 0;
-    border-right: 1px solid rgb(245, 245, 245);
+    border-right: 1px solid rgba(137, 140, 126, 0.3);
   }
 
   .thesis-article .thesis-video {
@@ -280,8 +314,10 @@ width:40%;
 /* Footer Section */
   footer {
     display: flex;
+    font-family:'Lato', sans-serif;
+    font-weight: lighter;
     padding:1rem 1.5rem ;
-    border-top: 1px solid rgb(245, 245, 245);
+    border-top: 1px solid rgba(137, 140, 126, 0.3);
     font-size: .75rem;
   }
 
@@ -308,21 +344,22 @@ footer a{
 @media only screen and (max-width: 800px) {
   header .desktop-header {
     display: none;
+
   }
 
   header .mobile-header {
     display:inline;
+
+
   }
 
   .mobile-header ul {
     display:flex;
     justify-content: space-around;
     align-items: center;
+    margin:0;
   }
 
-  header{
-    padding:0;
-  }
 
 .main-section{
   display:block;
@@ -337,6 +374,8 @@ footer a{
 
 .main-section .text-content {
   width:100%;
+  align-items: center;
+  text-align: center;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -363,6 +402,11 @@ display:none;
 .info-box .text-info {
   padding-top: 1rem;
   padding-bottom: 3rem;
+}
+
+.text-info h3 {
+  font-size: 1.5rem;
+  padding-top: 1rem;
 }
 
 .information-section .information-panel {

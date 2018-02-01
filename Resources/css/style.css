@@ -358,8 +358,18 @@ footer a{
     justify-content: space-around;
     align-items: center;
     margin:0;
+    padding: 0;
+    max-height: 30px;
+
+
+
   }
 
+.mobile-header li {
+  padding:0;
+
+
+}
 
 .main-section{
   display:block;
